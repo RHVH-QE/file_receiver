@@ -12,12 +12,6 @@ import (
 	"github.com/joho/godotenv"
 )
 
-/*
-curl -X POST http://localhost:8080/upload \
-  -F "upload[]=@/Users/appleboy/test1.zip" \
-  -F "upload[]=@/Users/appleboy/test2.zip" \
-  -H "Content-Type: multipart/form-data"
-*/
 func saveFile(c *gin.Context, dst string) error {
 	form, _ := c.MultipartForm()
 	files := form.File["upload[]"]
