@@ -2,10 +2,12 @@
 
 ### Server side setup
 
-edit the `.env` file, and keep this file at same level with the script
+1. down the complied binary [filereceiver](https://github.com/RHVH-QE/file_receiver/releases/download/v0.1.0/filereceiver), and `chmod +x`
+
+2. edit the `.env` file, and keep this file at same level with the script
 
 * `ROOT_PATH` is where should the file uploaded file to save, must be absolut path
-* `PORT` is the listen port, this will be effected the `curl` command
+* `PORT` is the listen port, this will be effected the `curl` command, make make sure the `port` not blocked by the firewall
 
 ### Client side usage
 
