@@ -6,7 +6,7 @@
 
 2. edit the `.env` file, and keep this file at same level with the script
 
-* `ROOT_PATH` is where should the file uploaded file to save, must be absolut path
+* `ROOT_PATH` is where should the file uploaded file to save, must be absolut path, and make sure **user run this script also has write permission**
 * `PORT` is the listen port, this will be effected the `curl` command, make make sure the `port` not blocked by the firewall
 
 ### Client side usage
